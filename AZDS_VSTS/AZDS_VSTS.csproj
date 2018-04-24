@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{86775D9A-8F7E-4FB6-9033-8344876A8A41}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AZDS_VSTS</RootNamespace>
+    <AssemblyName>AZDS_VSTS</AssemblyName>
+    <RanorexVersion>8.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>0de44815-637c-47ed-9cbe-38d857e837f0</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>d9597440-79cc-47a5-8481-e3a0cc78283b</id>
+    </Compile>
+    <Compile Include="AZDS_VSTSRepository.cs">
+      <BoundTo>0de44815-637c-47ed-9cbe-38d857e837f0</BoundTo>
+      <DependentUpon>AZDS_VSTSRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>43f0e4e8-c4e2-40dc-9e13-0133771aa693</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>8e2b57d0-3b07-448d-9910-953963a96069</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>375aa6c1-d527-4e7b-9696-8cef179b5fdc</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1407c699-d955-4617-b166-215c05adb0c9</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>375aa6c1-d527-4e7b-9696-8cef179b5fdc</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5a65b3b-88a4-443e-940a-300ce5ff74e1</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>7cef3896-fe91-448e-b852-e4c0be3df71d</id>
+    </None>
+    <None Include="AZDS_VSTSRepository.rximg">
+      <BoundTo>0de44815-637c-47ed-9cbe-38d857e837f0</BoundTo>
+      <DependentUpon>AZDS_VSTSRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>54c93750-981e-455f-b796-0792d4a16eba</id>
+    </None>
+    <None Include="AZDS_VSTSRepository.rxrep">
+      <id>0de44815-637c-47ed-9cbe-38d857e837f0</id>
+      <repoid>4dfb39a1-8a98-4a00-ae75-f6be0a4e19f0</repoid>
+      <reporootid>188e596b-8e1d-4ad4-b6da-af78bc02a84c</reporootid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>0de44815-637c-47ed-9cbe-38d857e837f0</BoundTo>
+      <id>375aa6c1-d527-4e7b-9696-8cef179b5fdc</id>
+      <recordtableid>704bbc6d-bdaf-4f11-9006-e52f2e588ce1</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AZDS_VSTS.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0440cdb4-8e1b-416a-98b5-9dc2f61b3673</id>
+    </Content>
+    <Content Include="AZDS_VSTS.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0e9fa3fe-8c4d-4c30-8243-226a955cef59</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

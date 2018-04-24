@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="AZDS_VSTS"
+      id="2f129101-d8d3-49da-851e-2914a3d480b4"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="AZDS_VSTS"
+      id="2f129101-d8d3-49da-851e-2914a3d480b4"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
