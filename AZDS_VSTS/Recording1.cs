@@ -125,6 +125,8 @@ namespace AZDS_VSTS
             Host.Current.CloseApplication(repo.RanorexVIPDatabaseTestWebApplicatio.Self, new Duration(0));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "User", "Triggering Build", new RecordItemIndex(12));
+            
         }
 
 #region Image Feature Data

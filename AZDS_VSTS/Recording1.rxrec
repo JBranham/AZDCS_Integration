@@ -4706,6 +4706,18 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBTf/WN9TRRRQB//9k=
 				</path>
 			</info>
 		</closeapprecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Triggering Build"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="47da6d69-28a9-4ab3-8454-e887e9b8ff43">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="4dfb39a1-8a98-4a00-ae75-f6be0a4e19f0"
