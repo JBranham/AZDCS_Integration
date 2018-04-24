@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="92d2c817-506c-4544-b11c-baa55eabf6c8"
+mode="Global"
+rxversion="8.1">
+	<name>
+		Recording2
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording2"
+	namespace="AZDS_VSTS">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Woohoo!"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="3a91c3f4-39a0-4638-ac77-9aa7d562321e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="4dfb39a1-8a98-4a00-ae75-f6be0a4e19f0"
+	name="AZDS_VSTSRepository"
+	relativepath="AZDS_VSTSRepository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="AZDS_VSTSRepository"
+		namespace="AZDS_VSTS">
+		</codegen>
+		<rootfolder
+		id="188e596b-8e1d-4ad4-b6da-af78bc02a84c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
